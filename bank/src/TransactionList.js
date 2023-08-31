@@ -9,7 +9,7 @@ function TransactionList() {
 
   //GET TRANSACTIONS FROM DB
   useEffect(() => {
-    fetch(`  http://localhost:8080/transactions`)
+    fetch(`   http://localhost:3000/transactions`)
       .then((Response) => Response.json())
       .then((transactions) => setTransactions(transactions));
   }, []);
